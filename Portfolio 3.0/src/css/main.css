@@ -91,9 +91,42 @@ textarea {
 .custom_Header {
     width: 100%;
 }
+.align_center{
+    text-align: center !important;
+}
+.align_left{
+    text-align: left;
+}
+.align_right{
+    text-align: right;
+}
+.wid{
+    font-size:3.5em !important;
+    z-index: 1;
+}
+.wid_m{
+    font-size: 2em !important;
+    z-index: 2;
+}
+.wid_t{
+    font-size: 2.75em !important;
+    z-index: 2;
+}
+.caption{
+    width:90%;
+    padding: 5px;
+    margin: 5px;
+}
+.heading{
+    width: 100%;
+    float: left;
+    margin:0;
+    padding: 0;
 
-
-
+}
+#headingTop{
+    transform: translateY(-50px);
+}
 
 
 

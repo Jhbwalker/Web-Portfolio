@@ -1,0 +1,602 @@
+.mobileView {
+    visibility: hidden;
+}
+
+.desktopView {
+    visibility: visible;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+    /******************************************************************************************
+     *******************************Section 1 (mobile)*****************************************
+     ******************************************************************************************/
+    header {
+        height: 25%;
+        width: 100%;
+        background: #1dcaff url('../img/dino-reichmuth-98982-min.jpg') no-repeat top center;
+        background-attachment: fixed;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .mobileView {
+        visibility: visible;
+
+    }
+
+    .desktopView {
+        display: none;
+    }
+
+    .topNav {
+        width: 100%;
+        height: 60px;
+        background-color: #262626;
+        position: fixed;
+        z-index: 1;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .topNav h2 {
+        margin: 12px 0 0 45px;
+    }
+
+    .toggle {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .toggle a {
+        text-decoration: none;
+        color: #262626;
+        font-size: 35px;
+        cursor: pointer;
+        text-align: center;
+
+    }
+
+    .menu {
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 1;
+        transition: 5s;
+
+    }
+
+    .mobileNavi {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .mobileNavi li {
+        list-style: none;
+    }
+
+    .mobileNavi li a {
+        padding: 10px;
+        display: inline-block;
+        font-size: 1.75em;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #262626;
+    }
+
+    .menu .active {
+        left: 0;
+        overflow: auto;
+    }
+
+    .arrow {
+        position: absolute;
+        width: 25%;
+        margin: 0;
+        padding: 0;
+        top: 78%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        animation: bounce 2s infinite;
+
+    }
+
+    .title {
+        font-size: 3vw;
+        text-align: center;
+        color: #fff;
+        line-height: 1.1;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        width: 90%;
+        height: auto;
+        font-family: Helvetica, sans-serif, Arial;
+        overflow: hidden;
+    }
+
+    .content {
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        height: 100px;
+        overflow: hidden;
+        font-family: Helvetica, sans-serif;
+        font-size: 24px;
+        line-height: 40px;
+        color: #fff;
+    }
+
+    .content-container {
+        font-weight: 600;
+        overflow: hidden;
+        height: 40px;
+        padding: 0 40px;
+
+    }
+
+    .content-container:before {
+        content: '[';
+        left: 0;
+    }
+
+    .content-container:after {
+        content: ']';
+        right: 0;
+        position: absolute;
+    }
+
+    .content-container:after, .content-container:before {
+        position: absolute;
+        top: 0;
+        color: #16a085;
+        font-size: 32px;
+        line-height: 40px;
+        -webkit-animation: opacity 2s infinite;
+        -o-animation: opacity 2s infinite;
+        animation: opacity 2s infinite;
+    }
+
+    .content-container-text {
+        display: inline;
+        float: left;
+        margin: 0;
+    }
+
+    .content-container-list {
+        margin-top: 0;
+        padding-left: 75px;
+        text-align: left;
+        list-style: none;
+        -webkit-animation: change 10s infinite;
+        -o-animation: change 10s infinite;
+        animation: change 10s infinite;
+    }
+
+    .content-container-list-item {
+        line-height: 40px;
+        margin: 0;
+    }
+
+    /******************************************************************************************
+     *******************************Section 2 (Mobile)*****************************************
+     ******************************************************************************************/
+
+    .container {
+        background-color: #fff;
+        width: 100%;
+        height: 30%;
+        border-bottom: dashed 1px #000;
+
+    }
+
+    .innerContainer {
+        background-color: white;
+        width: 95%;
+        height: 90%;
+        margin: 1.5% auto;
+        padding: inherit;
+    }
+
+    #aboutHeading {
+        font-size: 1.75em;
+        text-align: center;
+        margin: 60px 20px 20px 20px;
+    }
+
+    .ams {
+        font-size: 5vw;
+        /*float:right;*/
+        font-family: Helvetica, sans-serif;
+        position: relative;
+        margin-top: auto;
+        top: 0;
+        right: 0;
+        text-align: center;
+
+    }
+
+    .outerCircle {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        background-color: white;
+        float: left;
+        border-radius: 50%;
+        top: 4%;
+        left: 5%;
+        border: dashed 5px #2e6da4;
+        animation: rotate 200s linear infinite;
+
+    }
+
+    .innerCircle {
+        width: 275px;
+        height: 275px;
+        position: relative;
+        background-color: white;
+        background-image: url(../img/me.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        border-radius: 50%;
+        top: 5.5%;
+        left: 8.5%;
+        border: solid 5px #2e6da4;
+
+    }
+
+    .read {
+        padding: auto;
+        margin: 5px 15px;
+        color: #3c3c3c;
+        font-family: 'Ubuntu Condensed', cursive, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-align: left;
+        font-weight: 300;
+        font-size: 1.1rem;
+    }
+
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+    .desktopView {
+        display: block;
+
+    }
+
+    .mobileView {
+        display: none;
+    }
+
+    body {
+        font-family: Helvetica, sans-serif, Arial;
+        margin: 0;
+        padding: 0;
+        height: 3000px;
+    }
+    /******************************************************************************************
+    *******************************Section 1 (desktop)*****************************************
+    ******************************************************************************************/
+    header {
+        height: 975px;
+        width: 100%;
+        background: #1dcaff url('../img/dino-reichmuth-98982-min.jpg') no-repeat top center;
+        background-attachment: fixed;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    nav {
+        text-align: center;
+        margin-top: -16px;
+    }
+
+    .nav-menu {
+        margin: 0;
+    }
+
+    ul .navi {
+        margin: 0
+    }
+
+    .navi li {
+        list-style: none;
+        display: inline-block;
+        color: #fff;
+        font-weight: 800;
+        font-size: 2.0em;
+        margin: 5px 10px;
+        text-align: center;
+        position: relative;
+    }
+
+    .navi li:after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 3px;
+        width: 0;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease;
+    }
+
+    .navi li:hover:after {
+        width: 100%;
+        background: #fff;
+    }
+
+    .navi li:hover {
+        text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px rgba(0, 0, 0, .08), 0 0 30px rgba(0, 0, 0, .08), 0 0 40px rgba(0, 0, 0, .08),
+        0 0 50px rgba(0, 0, 0, .08);
+    }
+
+    .my-Name {
+        background: #000;
+        padding: 0 15px;
+        font-size: 2.5em !important;
+    }
+
+    .arrow {
+        position: absolute;
+        width: 5%;
+        margin: 0;
+        padding: 0;
+        top: 90%;
+        left: 47%;
+        transform: translate(-50%, -50%);
+        animation: bounce 2s infinite;
+
+    }
+
+    .title {
+        font-size: 2vw;
+        text-align: center;
+        color: #fff;
+        line-height: 1.1;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        width: 90%;
+        height: auto;
+        font-family: Helvetica, sans-serif, Arial;
+        overflow: hidden;
+    }
+
+    .content {
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        height: 100px;
+        overflow: hidden;
+        font-family: Helvetica, sans-serif;
+        font-size: 35px;
+        line-height: 40px;
+        color: #fff;
+    }
+
+    .content-container {
+        font-weight: 600;
+        overflow: hidden;
+        height: 40px;
+        padding: 0 40px;
+
+    }
+
+    .content-container:before {
+        content: '[';
+        left: 0;
+    }
+
+    .content-container:after {
+        content: ']';
+        right: 0;
+        position: absolute;
+    }
+
+    .content-container:after, .content-container:before {
+        position: absolute;
+        top: 0;
+        color: #16a085;
+        font-size: 42px;
+        line-height: 40px;
+        -webkit-animation: opacity 2s infinite;
+        -o-animation: opacity 2s infinite;
+        animation: opacity 2s infinite;
+    }
+
+    .content-container-text {
+        display: inline;
+        float: left;
+        margin: 0;
+    }
+
+    .content-container-list {
+        margin-top: 0;
+        padding-left: 110px;
+        text-align: left;
+        list-style: none;
+        -webkit-animation: change 10s infinite;
+        -o-animation: change 10s infinite;
+        animation: change 10s infinite;
+    }
+
+    .content-container-list-item {
+        line-height: 40px;
+        margin: 0;
+    }
+    /******************************************************************************************
+     *******************************Section 2 (desktop)*****************************************
+     ******************************************************************************************/
+    .container {
+        background-color: #fff;
+        width: 100%;
+        height: 20%;
+
+
+    }
+
+    .innerContainer {
+        background-color: white;
+        width: 95%;
+        height: 90%;
+        margin: 1.5% auto;
+        padding: inherit;
+
+    }
+
+    .outerCircle {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background-color: white;
+        float: left;
+        border-radius: 50%;
+        top: 3%;
+        left: 3%;
+        border: dashed 5px #2e6da4;
+        animation: rotate 200s linear infinite;
+
+    }
+    .innerCircle {
+        width: 375px;
+        height: 375px;
+        position: relative;
+        background-color: white;
+        background-image: url(../img/me.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        border-radius: 50%;
+        left: 3.7%;
+        border: solid 5px #2e6da4;
+    }
+    .mid{
+        width: 600px;
+        height: 300px;
+        float: left;
+        transform: translate(40%,-125%);
+    }
+    #aboutHeading {
+        font-size: 2.25em;
+        text-align: left;
+        margin: 30px 20px 15px 15px;
+    }
+    .read{
+        padding: auto;
+        margin: 5px 15px;
+        color: #3c3c3c;
+        font-family: 'Ubuntu Condensed', cursive, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-align: left;
+        font-weight: 300;
+        font-size: 1.1rem;
+    }
+    .dna_Container {
+        position: relative;
+        width: 100px;
+        height: 400px;
+        left: 90%;
+        bottom: 50%;
+        transform: translate(-90%,-84%);
+    }
+
+    .dnaStrand {
+        width: 20px;
+        position: relative;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+        animation: spin 21s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    }
+
+    .dnaStrand .caps {
+        width: 20px;
+        height: 1px;
+        background-color: #464141;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 16px auto;
+        position: relative;
+        transform: scale(0.6);
+    }
+
+    .dnaStrand .caps:before, .dnaStrand .caps:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        top: -10px;
+        left: -1px;
+    }
+    .icons{
+        height: 90px;
+        width: 46%;
+        position: relative;
+        left: 59%;
+        display: inline-block;
+        bottom: 51%;
+        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-344%);
+        -moz-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        
+        font-size: 4em;
+
+    }
+    .icons i{
+        margin: 10px 20px;
+    }
+
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+
+}

@@ -1,8 +1,16 @@
 .row{
-    padding: 20px;
+    padding: 0;
     width: 100%;
     min-height: 1px;
     float: left;
+    margin: 0 0;
+}
+.condensedRow{
+    padding: 0;
+    width: 85%;
+    min-height: 1px;
+    float: left;
+    margin: 0 0;
 }
 .col{
     min-height: 40px;

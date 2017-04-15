@@ -5,6 +5,7 @@ body {
     height: 3000px;
 }
 
+
 header {
     height: 975px;
     width: 100%;
@@ -167,7 +168,7 @@ ul .navi {
 
 }
 .title{
-    font-size: 2.75vw;
+    font-size: 2vw;
     text-align: center;
     color: #fff;
     line-height: 1.1;
@@ -307,10 +308,10 @@ ul .navi {
     }
 }
 .container{
-    background-color: #5e5e5e;
+    background-color: #fff;
     width: 100%;
     height:20%;
-    border: dashed 1px #fff;
+
 }
 .innerContainer{
     background-color: white;
@@ -319,3 +320,337 @@ ul .navi {
     margin: 1.5% auto;
     padding: inherit;
 }
+.innerContainer_tight{
+    background-color: white;
+    width:65%;
+    height: 90%;
+    margin: 1.5% auto;
+    padding: inherit;
+}
+.outerCircle{
+    width:400px;
+    height:400px;
+    position: relative;
+    background-color: white;
+    float:left;
+    border-radius:50%;
+    top:15%;
+    left:5%;
+    border: dashed 5px #2e6da4;
+    animation: rotate 200s linear infinite;
+
+}
+.innerCircle{
+    width:375px;
+    height:375px;
+    position: relative;
+    background-color: white;
+    background-image: url(../img/me.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    /*float:left;*/
+    border-radius:50%;
+    top:17%;
+    left:5.7%;
+    border: solid 5px #2e6da4;
+    /*transform: translate(-50%, -50%);*/
+
+}
+@media (max-width: 768px) {
+    .outerCircle{
+        width: 250px;
+        height: 250px;
+    }
+    .innerCircle{
+        width: 225px;
+        height: 225px;
+
+    }
+}
+.ams{
+    font-size:3vw;
+    float:right;
+    font-family: Helvetica, sans-serif;
+    right:20%;
+    bottom: 85%;
+    position: relative;
+    margin-top: auto;
+
+}
+.dna_Container{
+    position: relative;
+    width: 100px;
+    height:400px;
+    left:90%;
+    bottom:50%;
+}
+.dnaStrand{
+    width:20px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    animation: spin 21s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+.dnaStrand .caps{
+    width:20px;
+    height: 1px;
+    background-color: #464141;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 16px auto;
+    position: relative;
+    transform: scale(0.6);
+}
+.dnaStrand .caps:before, .dnaStrand .caps:after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left:-1px;
+}
+.dnaStrand .caps:nth-child(1):before{
+    animation: Before 1.9s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation-fill-mode: forwards;
+    animation-delay: -1.70s;
+    background-color: #42dbc0;
+    box-shadow: inset 2px 2px 5px #57dfc7;
+}
+.dnaStrand .caps:nth-child(1):after{
+    animation: After 1.9s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation-fill-mode: forwards;
+    animation-delay: -1.70s;
+    background-color: #6f58ee;
+    box-shadow: inset 2px 2px 5px #9786f3;
+}
+
+.dnaStrand .caps:nth-child(2):before{
+    animation: Before 1.9s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation-fill-mode: forwards;
+    animation-delay: -3.42s;
+    background-color: #42dbc0;
+    box-shadow: inset 2px 2px 5px #57dfc7;
+}
+.dnaStrand .caps:nth-child(2):after{
+    animation: After 1.9s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation-fill-mode: forwards;
+    animation-delay: -3.42s;
+    background-color: #6f58ee;
+    box-shadow: inset 2px 2px 5px #9786f3;
+}
+.dnaStrand .caps:nth-child(3):before{
+    animation: Before 1.9s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation-fill-mode: forwards;
+    animation-delay: -5.13s;
+    background-color: #42dbc0;
+    box-shadow: inset 2px 2px 5px #57dfc7;
+}
+.dnaStrand .caps:nth-child(3):after{
+    animation: After 1.9s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation-fill-mode: forwards;
+    animation-delay: -5.13s;
+    background-color: #6f58ee;
+    box-shadow: inset 2px 2px 5px #9786f3;
+}
+.dnaStrand .caps:nth-child(4):before{
+    animation: Before 1.9s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation-fill-mode: forwards;
+    animation-delay: -6.84s;
+    background-color: #42dbc0;
+    box-shadow: inset 2px 2px 5px #57dfc7;
+}
+.dnaStrand .caps:nth-child(4):after{
+    animation: After 1.9s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation-fill-mode: forwards;
+    animation-delay: -6.84s;
+    background-color: #6f58ee;
+    box-shadow: inset 2px 2px 5px #9786f3;
+}
+.dnaStrand .caps:nth-child(5):before{
+    animation: Before 1.9s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation-fill-mode: forwards;
+    animation-delay: -8.55s;
+    background-color: #42dbc0;
+    box-shadow: inset 2px 2px 5px #57dfc7;
+}
+.dnaStrand .caps:nth-child(5):after {
+    animation: After 1.9s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation-fill-mode: forwards;
+    animation-delay: -8.55s;
+    background-color: #6f58ee;
+    box-shadow: inset 2px 2px 5px #9786f3;
+}
+.dnaStrand .caps:nth-child(6):before{
+    animation: Before 1.9s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation-fill-mode: forwards;
+    animation-delay: -10.26s;
+    background-color: #42dbc0;
+    box-shadow: inset 2px 2px 5px #57dfc7;
+}
+.dnaStrand .caps:nth-child(6):after{
+    animation: After 1.9s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation-fill-mode: forwards;
+    animation-delay: -10.26s;
+    background-color: #6f58ee;
+    box-shadow: inset 2px 2px 5px #9786f3;
+}
+.dnaStrand .caps:nth-child(7):before{
+    animation: Before 1.9s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation-fill-mode: forwards;
+    animation-delay: -11.97s;
+    background-color: #42dbc0;
+    box-shadow: inset 2px 2px 5px #57dfc7;
+}
+.dnaStrand .caps:nth-child(7):after{
+    animation: After 1.9s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation-fill-mode: forwards;
+    animation-delay: -11.97s;
+    background-color: #6f58ee;
+    box-shadow: inset 2px 2px 5px #9786f3;
+}
+.dnaStrand .caps:nth-child(8):before{
+    animation: Before 1.9s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation-fill-mode: forwards;
+    animation-delay: -13.68s;
+    background-color: #42dbc0;
+    box-shadow: inset 2px 2px 5px #57dfc7;
+}
+.dnaStrand .caps:nth-child(8):after{
+    animation: After 1.9s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation-fill-mode: forwards;
+    animation-delay: -13.68s;
+    background-color: #6f58ee;
+    box-shadow: inset 2px 2px 5px #9786f3;
+}
+.dnaStrand .caps:nth-child(9):before{
+    animation: Before 1.9s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation-fill-mode: forwards;
+    animation-delay: -15.39s;
+    background-color: #42dbc0;
+    box-shadow: inset 2px 2px 5px #57dfc7;
+}
+.dnaStrand .caps:nth-child(9):after{
+    animation: After 1.9s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation-fill-mode: forwards;
+    animation-delay: -15.39s;
+    background-color: #6f58ee;
+    box-shadow: inset 2px 2px 5px #9786f3;
+}
+.dnaStrand .caps:nth-child(10):before{
+    animation: Before 1.9s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation-fill-mode: forwards;
+    animation-delay: -17.1s;
+    background-color: #42dbc0;
+    box-shadow: inset 2px 2px 5px #57dfc7;
+}
+.dnaStrand .caps:nth-child(10):after{
+    animation: After 1.9s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation-fill-mode: forwards;
+    animation-delay: -17.1s;
+    background-color: #6f58ee;
+    box-shadow: inset 2px 2px 5px #9786f3;
+}
+@keyframes Before {
+    0%{
+        left:-40px;
+        z-index: 10;
+    }
+    25%{
+        transform: scale(1.4);
+        z-index: 10;
+    }
+    50%{
+        left: 40px;
+        z-index: 1;
+    }
+    75%{
+        background-color: #42dbc0;
+        box-shadow: inset 2px 2px 5px #69cfcd;
+        transform: scale(0.6);
+        z-index: 1;
+    }
+    100%{
+        left: -40px;
+        z-index: 1;
+    }
+}
+@keyframes After {
+    0% {
+        left: 40px;
+        z-index: 1;
+    }
+    25% {
+        background-color: #7434f3;
+        box-shadow: inset 2px 2px 5px #9564f6;
+        transform: scale(0.6);
+        z-index: 1;
+    }
+    50% {
+        left: -40px;
+        z-index: 10;
+    }
+    75% {
+        transform: scale(1.4);
+        z-index: 10;
+    }
+    100% {
+        left: 40px;
+        z-index: 10;
+    }
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+.icons a{
+    color: #000;
+}
+.icons a i:nth-child(1){
+    transition: all ease-in-out 250ms;
+}
+.icons a i:nth-child(1):hover{
+    transform: translateY(-10px);
+    background: linear-gradient(left, #405de6 0%, #5851db 10%, #833ab4 19%,
+    #c13584 29%, #e1306c 42%, #fd1d1d 52%, #f56040 63%, #f77737 75%,
+    #fcaf45 87%, #ffdc80 100%); /* FF3.6-15 */;
+
+
+}
+.icons a:nth-child(2){
+    transition: all ease-in-out 250ms;
+}
+.icons a:nth-child(2):hover{
+    transform: translateY(-10px);
+    color: #3b5998;
+}
+.icons a:nth-child(3){
+    transition: all ease-in-out 250ms;
+}
+.icons a:nth-child(3):hover{
+    transform: translateY(-10px);
+    color: #6e5494;
+}
+.icons a:nth-child(4){
+    transition: all ease-in-out 250ms;
+}
+.icons a:nth-child(4):hover{
+    transform: translateY(-10px);
+    color: #0077b5;
+}
+.icons a:nth-child(5){
+    transition: all ease-in-out 250ms;
+}
+.icons a:nth-child(5):hover{
+    transform: translateY(-10px);
+}
+
