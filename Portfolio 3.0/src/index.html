@@ -19,9 +19,10 @@
     <link href="https://fonts.googleapis.com/css?family=Coda|Ubuntu+Condensed" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </head>
 <body>
-<header class="custom_Header">
+<header class="custom_Header" id="homepage">
     <!--Mobile Navigation-->
     <div class="topNav mobileView">
         <h2>Jarrell Walker</h2>
@@ -46,13 +47,13 @@
     <div class="nav-Menu desktopView">
         <nav>
             <ul class="navi">
-                <li id="home">Home</li>
-                <li id="about">About</li>
-                <li id="skills">Skills</li>
+                <li id="home"><a href="#homepage">Home</a></li>
+                <li id="about"><a href="#aboutContent">About</a></li>
+                <li id="skills"><a href="#skillsContent">Skills</a></li>
                 <li class="my-Name">Jarrell Walker</li>
-                <li id="port">Portfolio</li>
-                <li id="side">Side Projects</li>
-                <li id="contact">Contact</li>
+                <li id="port"><a href="#portContent">Portfolio</a></li>
+                <li id="side"><a href="#sideContent">Side Projects</a></li>
+                <li id="contact"><a href="#contactContent">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -229,11 +230,12 @@
 
 <!-- Add your site or application content here -->
 
-
+<script src="js/vendor/scrollreveal.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>

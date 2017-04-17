@@ -577,7 +577,7 @@
         height: 90px;
         width: 46%;
         position: relative;
-        left: 59%;
+        left: 37%; /* WIth scroll function/ without 59%*/
         display: inline-block;
         bottom: 51%;
         transform: translate(-50%,-50%);
@@ -585,7 +585,7 @@
         -moz-transform: translate(-50%,-50%);
         -o-transform: translate(-50%,-50%);
         -ms-transform: translate(-50%,-50%);
-        
+
         font-size: 4em;
 
     }

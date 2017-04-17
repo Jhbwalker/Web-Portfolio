@@ -29,6 +29,10 @@ nav {
 ul .navi {
     margin: 0
 }
+.navi a{
+    color: #fff;
+    text-decoration: none;
+}
 
 .navi li {
     list-style: none;
