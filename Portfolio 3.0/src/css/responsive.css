@@ -592,6 +592,66 @@
     .icons i{
         margin: 10px 20px;
     }
+    .level{
+        width: 100%;
+        height: auto;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -moz-orient: horizontal;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -webkit-box-sizing: border-box;
+        flex-direction:column;
+        -moz-box-sizing:border-box;
+        -ms-box-sizing:border-box;
+        box-sizing: border-box;
+        -webkit-overflow: hidden;
+        -moz-overflow: hidden;
+        -ms-overflow: hidden;
+        overflow: hidden;
+        margin-left: 1rem;
+        text-align: center;
+    }
+    .level .list{
+        width: 100%;
+        display: table;
+    }
+    .level .list .items{
+        display: table-cell;
+    }
+    .level .list .items:first-child{
+        width: 10%;
+        max-width: 35px;
+    }
+    .level .list .items:last-child{
+        width:90%;
+        vertical-align: middle;
+    }
+    .level .list .items.bar{
+        margin-left:30px;
+        margin-top: 20px;
+    }
+    .level{
+        width: 80%;
+        height: 30px;
+        position: relative;
+        background-color: #E6E6E6;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+    .description{
+        font-size:0.9rem;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom:1rem;
+    }
+
 
 
 }
