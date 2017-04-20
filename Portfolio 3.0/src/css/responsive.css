@@ -579,7 +579,7 @@
         position: relative;
         left: 37%; /* WIth scroll function/ without 59%*/
         display: inline-block;
-        bottom: 51%;
+        bottom: 64%;
         transform: translate(-50%,-50%);
         -webkit-transform: translate(-50%,-344%);
         -moz-transform: translate(-50%,-50%);
@@ -591,6 +591,9 @@
     }
     .icons i{
         margin: 10px 20px;
+    }
+    #headingTop h1{
+        margin-top: 1.8em !important;
     }
     .level{
         width: 100%;
@@ -637,22 +640,165 @@
         margin-left:30px;
         margin-top: 20px;
     }
-    .level{
+    .barGrowth{
         width: 80%;
         height: 30px;
         position: relative;
         background-color: #E6E6E6;
-        border-radius: 5px;
+        border-radius: 35px;
         margin-bottom: 5px;
     }
     .description{
-        font-size:0.9rem;
+        font-size:1.2rem;
         font-weight: 300;
         text-align: left;
-        margin-bottom:1rem;
+        margin-bottom:-1rem;
+        margin-top: 0;
+        font-family: 'Ubuntu Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
+    .barGrowth.html5 span{
+        width: 100%;
+        height: 30px;
+        background: #e34f26; /*html5 color*/
+        position:absolute;
+        opacity: 1;
+        left:0;
+        border-radius:35px;
+        overflow: hidden;
+        text-indent: -300000px;
+        z-index:100;
+    }
+    .barGrowth.html5.trigger span{
+        animation-delay: 750ms;
+        animation-duration: 3000ms;
+        animation-fill-mode:both;
+        -webkit-animation-timing-function: ease;
+        -moz-animation-timing-function: ease;
+        -o-animation-timing-function: ease;
+        animation-timing-function: ease;
+        animation-name: fill-85;
+    }
+    .barGrowth.css3 span {
+        width: 100%;
+        height: 30px;
+        background-color: #5399c8; /*brand color*/
+        position: absolute;
+        opacity: 1;
+        left: 0;
+        top: 0;
+        border-radius: 35px;
+        overflow: hidden;
+        text-indent: -290486px;
+        z-index: 100;
+    }
+    .barGrowth.css3.trigger span {
+        animation-delay: 750ms;
+        animation-duration: 2000ms;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        animation-name: fill-90;
 
-
+    }
+    .barGrowth.js span {
+        width: 100%;
+        height: 30px;
+        background-color: #fef35b; /*brand color*/
+        position: absolute;
+        opacity: 1;
+        left: 0;
+        top: 0;
+        border-radius: 35px;
+        overflow: hidden;
+        text-indent: -290486px;
+        z-index: 100;
+    }
+    .barGrowth.js.trigger span {
+        animation-delay: 750ms;
+        animation-duration: 2000ms;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        animation-name: fill-60;
+    }
+    .barGrowth.jquery span {
+          width: 100%;
+          height: 30px;
+          background-color: #395979; /*brand color*/
+          position: absolute;
+          opacity: 1;
+          left: 0;
+          top: 0;
+          border-radius: 35px;
+          overflow: hidden;
+          text-indent: -290486px;
+          z-index: 100;
+      }
+    .barGrowth.jquery.trigger span {
+        animation-delay: 750ms;
+        animation-duration: 2000ms;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        animation-name: fill-30;
+    }
+    .barGrowth.wp span {
+        width: 100%;
+        height: 30px;
+        background-color: #333333; /*brand color*/
+        position: absolute;
+        opacity: 1;
+        left: 0;
+        top: 0;
+        border-radius: 35px;
+        overflow: hidden;
+        text-indent: -290486px;
+        z-index: 100;
+    }
+    .barGrowth.wp.trigger span {
+        animation-delay: 750ms;
+        animation-duration: 2000ms;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        animation-name: fill-60;
+    }
+    .barGrowth.bs span {
+          width: 100%;
+          height: 30px;
+          background-color: #6441a5; /*brand color*/
+          position: absolute;
+          opacity: 1;
+          left: 0;
+          top: 0;
+          border-radius: 35px;
+          overflow: hidden;
+          text-indent: -290486px;
+          z-index: 100;
+      }
+    .barGrowth.bs.trigger span {
+        animation-delay: 750ms;
+        animation-duration: 2000ms;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        animation-name: fill-80;
+    }
+    .barGrowth.cc span {
+        width: 100%;
+        height: 30px;
+        background-color: #FCAB66; /*brand color*/
+        position: absolute;
+        opacity: 1;
+        left: 0;
+        top: 0;
+        border-radius:35px;
+        overflow: hidden;
+        text-indent: -290486px;
+        z-index: 100;
+    }
+    .barGrowth.cc.trigger span {
+        animation-delay: 750ms;
+        animation-duration: 2000ms;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        animation-name: fill-40;
+    }
 
 }
 
