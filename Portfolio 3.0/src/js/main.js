@@ -45,6 +45,12 @@ sr.reveal('.outerCircle', {
     distance: '100px',
     delay: 1000
 });
+sr.reveal('.imgBox',
+    {
+        duration: 2000,
+        origin:'top',
+       distance: '400px'
+    }, 250);
 //Scroll function to section
 $(function () {
     $('a[href*="#"]:not([href="#"])').click(function () {
