@@ -12,7 +12,7 @@
      *******************************Section 1 (mobile)*****************************************
      ******************************************************************************************/
     header {
-        height: 25%;
+        height: 21%;
         width: 100%;
         background: #1dcaff url('../img/dino-reichmuth-98982-min.jpg') no-repeat top center;
         background-attachment: fixed;
@@ -110,10 +110,10 @@
 
     .arrow {
         position: absolute;
-        width: 25%;
+        width: 20%;
         margin: 0;
         padding: 0;
-        top: 78%;
+        top: 85%;
         left: 40%;
         transform: translate(-50%, -50%);
         animation: bounce 2s infinite;
@@ -230,7 +230,6 @@
 
     .ams {
         font-size: 5vw;
-        /*float:right;*/
         font-family: Helvetica, sans-serif;
         position: relative;
         margin-top: auto;
@@ -239,21 +238,21 @@
         text-align: center;
 
     }
-
-    .outerCircle {
-        width: 300px;
-        height: 300px;
-        position: relative;
-        background-color: white;
-        float: left;
-        border-radius: 50%;
-        top: 4%;
-        left: 5%;
-        border: dashed 5px #2e6da4;
-        animation: rotate 200s linear infinite;
-
+    .icons {
+        font-size: 2.5em;
+        text-align: center;
+        margin: 15% auto;
     }
-
+    .wid {
+        font-size: 3em !important;
+        z-index: 1;
+    }
+    .skillPoints{
+        font-size: 0.9em;
+    }
+    #skillsContent{
+        height: 44%;
+    }
     .innerCircle {
         width: 275px;
         height: 275px;
@@ -269,6 +268,9 @@
         border: solid 5px #2e6da4;
 
     }
+    #Skills_Detailed{
+        height: 55%;
+    }
 
     .read {
         padding: auto;
@@ -279,7 +281,277 @@
         font-weight: 300;
         font-size: 1.1rem;
     }
+    blockquote {
+        font-size: 2em;
+        font-weight: 300;
+        text-shadow: #000 0 10px 4px;
+    }
+    .innerContainer_tight{
+        width: 100%;
+    }
+    .level{
+        width: 100%;
+        height: auto;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -moz-orient: horizontal;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -webkit-box-sizing: border-box;
+        flex-direction:column;
+        -moz-box-sizing:border-box;
+        -ms-box-sizing:border-box;
+        box-sizing: border-box;
+        -webkit-overflow: hidden;
+        -moz-overflow: hidden;
+        -ms-overflow: hidden;
+        overflow: hidden;
+        margin-left: -1rem;
+        text-align: center;
+    }
+    .level .list{
+        width: 100%;
+        display: table;
+    }
+    .level .list .items{
+        display: table-cell;
+    }
+    .level .list .items:first-child{
+        width: 21%;
+        max-width: 35px;
+    }
+    .level .list .items:last-child{
+        width:90%;
+        vertical-align: middle;
+    }
+    .level .list .items.bar{
+        margin-left:30px;
+        margin-top: 20px;
+    }
+    .barGrowth{
+        width: 80%;
+        height: 18px;
+        position: relative;
+        background-color: #E6E6E6;
+        border-radius: 35px;
+        margin-bottom: 5px;
+    }
+    .description{
+        font-size:1.2rem;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom:-1rem;
+        margin-top: 0;
+        font-family: 'Ubuntu Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .barGrowth.html5 span{
+        width: 100%;
+        height: 18px;
+        background: #e34f26; /*html5 color*/
+        position:absolute;
+        opacity: 1;
+        left:0;
+        border-radius:35px;
+        overflow: hidden;
+        text-indent: -300000px;
+        z-index:100;
+    }
+    .barGrowth.html5.trigger span{
+        animation-delay: 750ms;
+        animation-duration: 3000ms;
+        animation-fill-mode:both;
+        -webkit-animation-timing-function: ease;
+        -moz-animation-timing-function: ease;
+        -o-animation-timing-function: ease;
+        animation-timing-function: ease;
+        animation-name: fill-85;
+    }
+    .barGrowth.css3 span {
+        width: 100%;
+        height: 18px;
+        background-color: #5399c8; /*brand color*/
+        position: absolute;
+        opacity: 1;
+        left: 0;
+        top: 0;
+        border-radius: 35px;
+        overflow: hidden;
+        text-indent: -290486px;
+        z-index: 100;
+    }
+    .barGrowth.css3.trigger span {
+        animation-delay: 750ms;
+        animation-duration: 2000ms;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        animation-name: fill-90;
 
+    }
+    .barGrowth.js span {
+        width: 100%;
+        height: 18px;
+        background-color: #fef35b; /*brand color*/
+        position: absolute;
+        opacity: 1;
+        left: 0;
+        top: 0;
+        border-radius: 35px;
+        overflow: hidden;
+        text-indent: -290486px;
+        z-index: 100;
+    }
+    .barGrowth.js.trigger span {
+        animation-delay: 750ms;
+        animation-duration: 2000ms;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        animation-name: fill-60;
+    }
+    .barGrowth.jquery span {
+        width: 100%;
+        height: 18px;
+        background-color: #395979; /*brand color*/
+        position: absolute;
+        opacity: 1;
+        left: 0;
+        top: 0;
+        border-radius: 35px;
+        overflow: hidden;
+        text-indent: -290486px;
+        z-index: 100;
+    }
+    .barGrowth.jquery.trigger span {
+        animation-delay: 750ms;
+        animation-duration: 2000ms;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        animation-name: fill-30;
+    }
+    .barGrowth.wp span {
+        width: 100%;
+        height: 18px;
+        background-color: #333333; /*brand color*/
+        position: absolute;
+        opacity: 1;
+        left: 0;
+        top: 0;
+        border-radius: 35px;
+        overflow: hidden;
+        text-indent: -290486px;
+        z-index: 100;
+    }
+    .barGrowth.wp.trigger span {
+        animation-delay: 750ms;
+        animation-duration: 2000ms;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        animation-name: fill-60;
+    }
+    .barGrowth.bs span {
+        width: 100%;
+        height: 18px;
+        background-color: #6441a5; /*brand color*/
+        position: absolute;
+        opacity: 1;
+        left: 0;
+        top: 0;
+        border-radius: 35px;
+        overflow: hidden;
+        text-indent: -290486px;
+        z-index: 100;
+    }
+    .barGrowth.bs.trigger span {
+        animation-delay: 750ms;
+        animation-duration: 2000ms;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        animation-name: fill-80;
+    }
+    .barGrowth.cc span {
+        width: 100%;
+        height: 18px;
+        background-color: #FCAB66; /*brand color*/
+        position: absolute;
+        opacity: 1;
+        left: 0;
+        top: 0;
+        border-radius:35px;
+        overflow: hidden;
+        text-indent: -290486px;
+        z-index: 100;
+    }
+    .barGrowth.cc.trigger span {
+        animation-delay: 750ms;
+        animation-duration: 2000ms;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        animation-name: fill-40;
+    }
+    .animatedSquares {
+        background-color: #353535;
+        position: relative;
+        width: 10em;
+        height: 10em;
+        margin: 12% 28%;
+        transform: rotateZ(45deg);
+        border-radius: 3px;
+        overflow: hidden;
+        color: #fff;
+    }
+
+    .animatedSquares:hover {
+        transform: scale(1.5);
+        border-radius: 50%;
+    }
+
+    .animatedSquares span p {
+        position: absolute;
+        font-size: 1.3em;
+        text-align: center;
+        transform: rotateZ(-45deg);
+        font-family: 'Ubuntu Condensed', cursive, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        top: 25%;
+        transition: transform 0.4s cubic-bezier(.72, -0.61, .25, 1.51);
+    }
+
+    .animatedSquares span i {
+        position: absolute;
+        font-size: 3em !important;
+        text-align: center;
+        transform: rotateZ(-45deg);
+        top: 57%;
+        left: 53%;
+        transition: transform 0.4s cubic-bezier(.72, -0.61, .25, 1.51);
+    }
+
+    .animatedSquares:hover .view {
+        transform: translateX(8em);
+    }
+    #sideContent{
+        height: 40%;
+    }
+    .imgBox {
+        position: relative;
+        width: 80%;
+        height: auto;
+        background-size: cover;
+        border: 2px solid #3c3c3c;
+        overflow: hidden;
+        margin: 5% 10%;
+    }
+    #portContent{
+        height: 54%;
+    }
+
+    .quotes{
+        height: 11%;
+    }
 
 
 
@@ -290,7 +562,7 @@
 
 }
 
-/* Small Devices, Tablets */
+/* Small Devices,  Laptops, Tablets */
 @media only screen and (min-width: 768px) {
 
 }
@@ -854,5 +1126,756 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
+    header {
+        height: 975px;
+        width: 100%;
+        background: #1dcaff url('../img/dino-reichmuth-98982-min.jpg') no-repeat top center;
+        background-attachment: fixed;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
 
+    nav {
+        text-align: center;
+        margin-top: -16px;
+    }
+
+    .nav-menu {
+        margin: 0;
+    }
+
+    ul .navi {
+        margin: 0
+    }
+
+    .navi li {
+        list-style: none;
+        display: inline-block;
+        color: #fff;
+        font-weight: 800;
+        font-size: 1.5em;
+        margin: 5px 10px;
+        text-align: center;
+        position: relative;
+    }
+    .icons{
+        font-size: 3em;
+        width: 40%;
+    }
+    .dna_Container {
+        left: 100%;
+        bottom: 50%;
+    }
+    .mid {
+        width: 35%;
+        height: 337px;
+        float: left;
+        transform: translate(33%,-108%);
+    }
+    .innerCircle {
+        width: 325px;
+        height: 325px;
+    }
+    .outerCircle {
+        width: 350px;
+        height: 350px;
+        top: 4%;
+        left: 2.77%;
+    }
+    .my-Name {
+
+        font-size: 2.1em !important;
+    }
+    #aboutHeading {
+        font-size: 2em;
+    }
+    .read {
+        font-size: 1rem;
+    }
+    .dsImages {
+        width: 155px;
+    }
+    .dsText{
+        margin-right: 50px !important;
+    }
+    .barGrowth{
+        width: 90%;
+    }
+    .imgBox {
+
+        width: 85%;
+        margin: 5% 7%;
+    }
+    .animatedSquares {
+        width: 12em;
+        height: 12em;
+        margin: 25% 25%;
+    }
+    .animatedSquares span i {
+
+        font-size: 3em !important;
+    }
+    .animatedSquares span p {
+        font-size: 1.5em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen  and (min-width : 1824px) {
+    .desktopView {
+        display: block;
+
+    }
+
+    .mobileView {
+        display: none;
+    }
+
+    body {
+        font-family: Helvetica, sans-serif, Arial;
+        margin: 0;
+        padding: 0;
+        height: 3000px;
+    }
+
+    /******************************************************************************************
+    *******************************Section 1 (desktop)*****************************************
+    ******************************************************************************************/
+    header {
+        height: 975px;
+        width: 100%;
+        background: #1dcaff url('../img/dino-reichmuth-98982-min.jpg') no-repeat top center;
+        background-attachment: fixed;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    nav {
+        text-align: center;
+        margin-top: -16px;
+    }
+
+    .nav-menu {
+        margin: 0;
+    }
+
+    ul .navi {
+        margin: 0
+    }
+
+    .navi li {
+        list-style: none;
+        display: inline-block;
+        color: #fff;
+        font-weight: 800;
+        font-size: 2.0em;
+        margin: 5px 10px;
+        text-align: center;
+        position: relative;
+    }
+
+    .navi li:after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 3px;
+        width: 0;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease;
+    }
+
+    .navi li:hover:after {
+        width: 100%;
+        background: #fff;
+    }
+
+    .navi li:hover {
+        text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px rgba(0, 0, 0, .08), 0 0 30px rgba(0, 0, 0, .08), 0 0 40px rgba(0, 0, 0, .08),
+        0 0 50px rgba(0, 0, 0, .08);
+    }
+
+    .my-Name {
+        background: #000;
+        padding: 0 15px;
+        font-size: 2.5em !important;
+    }
+
+    .arrow {
+        position: absolute;
+        width: 5%;
+        margin: 0;
+        padding: 0;
+        top: 90%;
+        left: 47%;
+        transform: translate(-50%, -50%);
+        animation: bounce 2s infinite;
+
+    }
+
+    .title {
+        font-size: 2vw;
+        text-align: center;
+        color: #fff;
+        line-height: 1.1;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        width: 90%;
+        height: auto;
+        font-family: Helvetica, sans-serif, Arial;
+        overflow: hidden;
+    }
+
+    .content {
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        height: 100px;
+        overflow: hidden;
+        font-family: Helvetica, sans-serif;
+        font-size: 35px;
+        line-height: 40px;
+        color: #fff;
+    }
+
+    .content-container {
+        font-weight: 600;
+        overflow: hidden;
+        height: 40px;
+        padding: 0 40px;
+
+    }
+
+    .content-container:before {
+        content: '[';
+        left: 0;
+    }
+
+    .content-container:after {
+        content: ']';
+        right: 0;
+        position: absolute;
+    }
+
+    .content-container:after, .content-container:before {
+        position: absolute;
+        top: 0;
+        color: #16a085;
+        font-size: 42px;
+        line-height: 40px;
+        -webkit-animation: opacity 2s infinite;
+        -o-animation: opacity 2s infinite;
+        animation: opacity 2s infinite;
+    }
+
+    .content-container-text {
+        display: inline;
+        float: left;
+        margin: 0;
+    }
+
+    .content-container-list {
+        margin-top: 0;
+        padding-left: 110px;
+        text-align: left;
+        list-style: none;
+        -webkit-animation: change 10s infinite;
+        -o-animation: change 10s infinite;
+        animation: change 10s infinite;
+    }
+
+    .content-container-list-item {
+        line-height: 40px;
+        margin: 0;
+    }
+
+    /******************************************************************************************
+     *******************************Section 2 (desktop)*****************************************
+     ******************************************************************************************/
+    .container {
+        background-color: #fff;
+        width: 100%;
+        height: 22%;
+
+    }
+
+    .innerContainer {
+        background-color: inherit;
+        width: 95%;
+        height: 90%;
+        margin: 1.5% auto;
+        padding: inherit;
+
+    }
+
+    .outerCircle {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background-color: white;
+        float: left;
+        border-radius: 50%;
+        top: 3%;
+        left: 3%;
+        border: dashed 5px #2e6da4;
+        animation: rotate 200s linear infinite;
+
+    }
+
+    .innerCircle {
+        width: 375px;
+        height: 375px;
+        position: relative;
+        background-color: white;
+        background-image: url(../img/me.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        border-radius: 50%;
+        left: 3.7%;
+        border: solid 5px #2e6da4;
+    }
+
+    .mid {
+        width: 600px;
+        height: 300px;
+        float: left;
+        transform: translate(40%, -125%);
+    }
+
+    #aboutHeading {
+        font-size: 2.25em;
+        text-align: left;
+        margin: 30px 20px 15px 15px;
+    }
+
+    .read {
+        padding: auto;
+        margin: 5px 15px;
+        color: #3c3c3c;
+        font-family: 'Ubuntu Condensed', cursive, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-align: left;
+        font-weight: 300;
+        font-size: 1.1rem;
+    }
+
+    .dna_Container {
+        position: relative;
+        width: 100px;
+        height: 400px;
+        left: 90%;
+        bottom: 50%;
+        transform: translate(-90%, -84%);
+    }
+
+    .dnaStrand {
+        width: 20px;
+        position: relative;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+        animation: spin 21s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    }
+
+    .dnaStrand .caps {
+        width: 20px;
+        height: 1px;
+        background-color: #464141;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 16px auto;
+        position: relative;
+        transform: scale(0.6);
+    }
+
+    .dnaStrand .caps:before, .dnaStrand .caps:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        top: -10px;
+        left: -1px;
+    }
+
+    .icons {
+        height: 90px;
+        width: 33%;
+        position: relative;
+        left: 36%; /* WIth scroll function/ without 59%*/
+        display: block;
+        bottom: 50%;
+        font-size: 4em;
+        margin: 0;
+       text-align: left;
+    }
+
+    .icons i {
+        margin: 10px 20px;
+    }
+
+    #headingTop h1 {
+        margin-top: 1.8em !important;
+    }
+
+    .level {
+        width: 100%;
+        height: auto;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -moz-orient: horizontal;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -webkit-box-sizing: border-box;
+        flex-direction: column;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-overflow: hidden;
+        -moz-overflow: hidden;
+        -ms-overflow: hidden;
+        overflow: hidden;
+        margin-left: 1rem;
+        text-align: center;
+    }
+
+    .level .list {
+        width: 100%;
+        display: table;
+    }
+
+    .level .list .items {
+        display: table-cell;
+    }
+
+    .level .list .items:first-child {
+        width: 10%;
+        max-width: 35px;
+    }
+
+    .level .list .items:last-child {
+        width: 90%;
+        vertical-align: middle;
+    }
+
+    .level .list .items.bar {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .barGrowth {
+        width: 80%;
+        height: 30px;
+        position: relative;
+        background-color: #E6E6E6;
+        border-radius: 35px;
+        margin-bottom: 5px;
+    }
+
+    .description {
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: -1rem;
+        margin-top: 0;
+        font-family: 'Ubuntu Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .barGrowth.html5 span {
+        width: 100%;
+        height: 30px;
+        background: #e34f26; /*html5 color*/
+        position: absolute;
+        opacity: 1;
+        left: 0;
+        border-radius: 35px;
+        overflow: hidden;
+        text-indent: -300000px;
+        z-index: 100;
+    }
+
+    .barGrowth.html5.trigger span {
+        animation-delay: 750ms;
+        animation-duration: 3000ms;
+        animation-fill-mode: both;
+        -webkit-animation-timing-function: ease;
+        -moz-animation-timing-function: ease;
+        -o-animation-timing-function: ease;
+        animation-timing-function: ease;
+        animation-name: fill-85;
+    }
+
+    .barGrowth.css3 span {
+        width: 100%;
+        height: 30px;
+        background-color: #5399c8; /*brand color*/
+        position: absolute;
+        opacity: 1;
+        left: 0;
+        top: 0;
+        border-radius: 35px;
+        overflow: hidden;
+        text-indent: -290486px;
+        z-index: 100;
+    }
+
+    .barGrowth.css3.trigger span {
+        animation-delay: 750ms;
+        animation-duration: 2000ms;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        animation-name: fill-90;
+
+    }
+
+    .barGrowth.js span {
+        width: 100%;
+        height: 30px;
+        background-color: #fef35b; /*brand color*/
+        position: absolute;
+        opacity: 1;
+        left: 0;
+        top: 0;
+        border-radius: 35px;
+        overflow: hidden;
+        text-indent: -290486px;
+        z-index: 100;
+    }
+
+    .barGrowth.js.trigger span {
+        animation-delay: 750ms;
+        animation-duration: 2000ms;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        animation-name: fill-60;
+    }
+
+    .barGrowth.jquery span {
+        width: 100%;
+        height: 30px;
+        background-color: #395979; /*brand color*/
+        position: absolute;
+        opacity: 1;
+        left: 0;
+        top: 0;
+        border-radius: 35px;
+        overflow: hidden;
+        text-indent: -290486px;
+        z-index: 100;
+    }
+
+    .barGrowth.jquery.trigger span {
+        animation-delay: 750ms;
+        animation-duration: 2000ms;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        animation-name: fill-30;
+    }
+
+    .barGrowth.wp span {
+        width: 100%;
+        height: 30px;
+        background-color: #333333; /*brand color*/
+        position: absolute;
+        opacity: 1;
+        left: 0;
+        top: 0;
+        border-radius: 35px;
+        overflow: hidden;
+        text-indent: -290486px;
+        z-index: 100;
+    }
+
+    .barGrowth.wp.trigger span {
+        animation-delay: 750ms;
+        animation-duration: 2000ms;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        animation-name: fill-60;
+    }
+
+    .barGrowth.bs span {
+        width: 100%;
+        height: 30px;
+        background-color: #6441a5; /*brand color*/
+        position: absolute;
+        opacity: 1;
+        left: 0;
+        top: 0;
+        border-radius: 35px;
+        overflow: hidden;
+        text-indent: -290486px;
+        z-index: 100;
+    }
+
+    .barGrowth.bs.trigger span {
+        animation-delay: 750ms;
+        animation-duration: 2000ms;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        animation-name: fill-80;
+        -webkit-animation-delay: 750ms;
+        -webkit-animation-duration: 2000ms;
+        -webkit-animation-fill-mode: both;
+        -webkit-animation-timing-function: ease;
+        -webkit-animation-name: fill-80;
+    }
+
+    .barGrowth.cc span {
+        width: 100%;
+        height: 30px;
+        background-color: #FCAB66; /*brand color*/
+        position: absolute;
+        opacity: 1;
+        left: 0;
+        top: 0;
+        border-radius: 35px;
+        overflow: hidden;
+        text-indent: -290486px;
+        z-index: 100;
+    }
+
+    .barGrowth.cc.trigger span {
+        animation-delay: 750ms;
+        animation-duration: 2000ms;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        animation-name: fill-40;
+        -webkit-animation-delay: 750ms;
+        -webkit-animation-duration: 2000ms;
+        -webkit-animation-fill-mode: both;
+        -webkit-animation-timing-function: ease;
+        -webkit-animation-name: fill-40;
+    }
+
+    #portContent {
+        height: 30%;
+        background-color: #ffffff;
+
+    }
+    .innerContainer_tight {
+        width: 65%;
+    }
+
+    #portInnerContent {
+        background-color: inherit;
+    }
+
+    #skills_Detailed {
+        height: 27%;
+    }
+
+    .game_Pictures img {
+        width: 400px;
+        height: auto;
+        position: relative;
+        display: block;
+    }
+
+    .animatedSquares {
+        background-color: #353535;
+        position: relative;
+        width: 16em;
+        height: 16em;
+        margin: 12% 28%;
+        transform: rotateZ(45deg);
+        border-radius: 3px;
+        overflow: hidden;
+        color: #fff;
+    }
+
+    .animatedSquares:hover {
+        transform: scale(1.5);
+        border-radius: 50%;
+       -webkit-transform: scale(1.5);
+    }
+
+    .animatedSquares span p {
+        position: absolute;
+        font-size: 2em;
+        text-align: center;
+        transform: rotateZ(-45deg);
+        font-family: 'Ubuntu Condensed', cursive, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        top: 25%;
+        transition: transform 0.4s cubic-bezier(.72, -0.61, .25, 1.51);
+        -webkit-transition: transform 0.4s cubic-bezier(.72, -0.61, .25, 1.51);
+        -moz-transition: transform 0.4s cubic-bezier(.72, -0.61, .25, 1.51);
+    }
+
+    .animatedSquares span i {
+        position: absolute;
+        font-size: 4.0em !important;
+        text-align: center;
+        transform: rotateZ(-45deg);
+        top: 57%;
+        left: 53%;
+        transition: transform 0.4s cubic-bezier(.72, -0.61, .25, 1.51);
+    }
+
+    .animatedSquares:hover .view {
+        transform: translateX(8em);
+    }
+    .imgBox {
+        position: relative;
+        width: 375px;
+    }
+
+    #contactinfo {
+        font-size: 1.5em;
+    }
+    #skillsContent{
+        height: 22%;
+    }
+    #Skills_Detailed{
+        height: 22%;
+    }
+    #sideContent {
+        height: 22%;
+    }
+    #portContent{
+        height:30% ;
+    }
+    .imgBox{
+        position: relative;
+        width: 430px;
+        height:275px;
+        background-size: cover;
+        border: 2px solid #3c3c3c;
+        overflow: hidden;
+        /*border-radius: px;*/
+        margin: 5% 10%;
+    }
+    .quotes{
+        height: 21%;
+    }
+    .wid{
+        font-size: 4em;
+    }
+    .skillPoints{
+        font-size: 1.5em;
+    }
 }
