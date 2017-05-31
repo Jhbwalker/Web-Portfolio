@@ -22,6 +22,11 @@ html {
  * Customize the background color to match your design.
  */
 
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -116,6 +121,7 @@ textarea {
     width:90%;
     padding: 5px;
     margin: 5px;
+    text-align: center;
 }
 .heading{
     width: 100%;
@@ -224,6 +230,7 @@ textarea {
 }
 
 @media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */

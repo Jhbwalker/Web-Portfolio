@@ -3,6 +3,36 @@ $(document).ready(function () {
         $('.menu').toggleClass('active');
     })
 });
+$(document).ready(function () {
+    $('.sidebarBtn').click(function () {
+        $('.sidebarB').toggleClass('active');
+        $('.sidebarBtn').toggleClass('toggle');
+    })
+});
+
+// $('.arrow').addClass('origin').clone().insertAfter('.arrow').addClass('cloned').css('position',
+//     'fixed').css('top', '0').css('z-index', '20').removeClass('origin').hide();
+//
+// scrollIntervalID = setInterval(stickyNav, 10);
+//
+// function stickyNav() {
+//     // debugger;
+//     var originalElePos = $('.origin').offset();
+//     var originElementTop = originalElePos.top;
+//
+//     if($(window).scrollTop() >= originElementTop){
+//         originElement = $('.origin');
+//         coordsOriginElement = originElement.offset();
+//         leftOfElement = coordsOriginElement.left;
+//         widthOfElement = originElement.css('width');
+//         $('.cloned').css('left', leftOfElement + 'px').css('top', '0').css('width', widthOfElement).show();
+//         $('.origin').css('visibility', 'hidden');
+//
+//     }else{
+//         $('.clone').hide();
+//         $('.origin').css('visibility', 'visible');
+//     }
+// }
 window.sr = ScrollReveal();
 sr.reveal('.read', {
     duration: 2000,
@@ -83,5 +113,29 @@ $(function () {
 }(jQuery, window));
 $(".barGrowth").inViewport(function(px){
     if(px) $(this).addClass("trigger") ;
+});
+$('form.ajax').on('submit', function () {
+   console.log('trigger');
+    var curAtt = $(this),
+        url = curAtt.attr('action'),
+        method = curAtt.attr('method'),
+        data = {};
+    curAtt.find(['name']).each(function (index, value) {
+        console.log(value);
+        var curAtt = $(this), name = curAtt.attr('name'), value = curAtt.val();
+        data[name] = value;
+
+    });
+    $.ajax({
+       url: url,
+        type: type,
+        data: data,
+        success: function (response) {
+            console.log(response)
+        }
+    });
+    console.log(data);
+
+    return false;
 });
 

@@ -19,6 +19,27 @@
     BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 </IfModule>
 
-<FilesMatch "\.(jpg|png|icon|txt|gif)$">
-Header set Cache-Control "public, max-age=600"
+# 1 YEAR
+<FilesMatch "\.(ico|pdf|flv)$">
+Header set Cache-Control "max-age=29030400, public"
 </FilesMatch>
+# 1 WEEK
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|svg)$">
+Header set Cache-Control "max-age=604800, public ,must-revalidate"
+</FilesMatch>
+# 2 DAYS
+<FilesMatch "\.(xml|txt|css|js)$">
+Header set Cache-Control "max-age=7200, proxy-revalidate"
+</FilesMatch>
+# 1 MIN
+<FilesMatch "\.(html|htm|php)$">
+Header set Cache-Control "max-age=60, private, proxy-revalidate"
+</FilesMatch>
+
+#display no errs to user
+php_flag display_startup_errors off
+php_flag display_errors off
+php_flag html_errors off
+# log to file
+php_flag log_errors on
+php_value error_log /location/to/php_error.log

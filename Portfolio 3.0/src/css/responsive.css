@@ -36,11 +36,90 @@
         height: 60px;
         background-color: #262626;
         position: fixed;
-        z-index: 1;
+        z-index: 3;
         color: #fff;
         text-align: center;
         text-transform: uppercase;
     }
+    .sidebarB{
+        position: fixed;
+        top: 0;
+        left:-250px;
+        background: #262626;
+        width:250px;
+        height: 100%;
+        transition: .5s;
+        z-index: 2;
+    }
+    ul.mobileNav{
+        margin: 0;
+        padding: 70px 0;
+        font-size: 1.5em;
+    }
+    ul.mobileNav li a{
+        padding: 10px 20px;
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+    .sidebarBtn{
+        position: fixed;
+        top: 0;
+        right: 310px;
+        width: 50px;
+        height: 59px;
+        cursor: pointer;
+        box-sizing: border-box;
+        background: #f5f5f5;
+        border: none;
+        outline: none;
+        z-index: 4;
+    }
+    .active{
+        left: 0;
+    }
+    .sidebarBtn span{
+        display: block;
+        width: 35px;
+        height: 3px;
+        background: #262626;
+        position: absolute;
+        top: 24px;
+        transition: .3s;
+    }
+    .sidebarBtn span:before{
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: #262626;
+        position: absolute;
+        left:0;
+        top:-10px;
+        transition: .3s;
+    }
+    .sidebarBtn span:after{
+        content: '';
+        width: 100%;
+        height: 3px;
+        left:0;
+        background: #262626;
+        position: absolute;
+        top:10px;
+        transition: .3s;
+    }
+    .sidebarBtn.toggle span{
+        background: transparent;
+    }
+    .sidebarBtn.toggle span:before{
+        top:0;
+        transform: rotate(45deg);
+    }
+    .sidebarBtn.toggle span:after{
+        top:0;
+        transform: rotate(-45deg);
+    }
+
 
     .topNav h2 {
         margin: 12px 0 0 45px;
@@ -48,7 +127,7 @@
 
     .toggle {
         position: fixed;
-        z-index: 2;
+        z-index: 5;
         top: 0;
         left: 0;
         width: 60px;
@@ -63,7 +142,6 @@
         font-size: 35px;
         cursor: pointer;
         text-align: center;
-
     }
 
     .menu {
@@ -176,8 +254,6 @@
         color: #16a085;
         font-size: 32px;
         line-height: 40px;
-        -webkit-animation: opacity 2s infinite;
-        -o-animation: opacity 2s infinite;
         animation: opacity 2s infinite;
     }
 
@@ -192,8 +268,6 @@
         padding-left: 75px;
         text-align: left;
         list-style: none;
-        -webkit-animation: change 10s infinite;
-        -o-animation: change 10s infinite;
         animation: change 10s infinite;
     }
 
@@ -292,20 +366,13 @@
     .level{
         width: 100%;
         height: auto;
-        display: -webkit-box;
-        display: -moz-box;
         display: -ms-flexbox;
-        display: -webkit-flex;
         display: flex;
-        -webkit-box-orient: horizontal;
         -moz-orient: horizontal;
-        -webkit-box-direction: normal;
-        -moz-box-direction: normal;
-        -webkit-flex-direction: column;
         -moz-flex-direction: column;
         -webkit-box-sizing: border-box;
+        -ms-flex-direction:column;
         flex-direction:column;
-        -moz-box-sizing:border-box;
         -ms-box-sizing:border-box;
         box-sizing: border-box;
         -webkit-overflow: hidden;
@@ -366,9 +433,6 @@
         animation-delay: 750ms;
         animation-duration: 3000ms;
         animation-fill-mode:both;
-        -webkit-animation-timing-function: ease;
-        -moz-animation-timing-function: ease;
-        -o-animation-timing-function: ease;
         animation-timing-function: ease;
         animation-name: fill-85;
     }
@@ -578,7 +642,7 @@
         display: none;
     }
 
-    body {
+    body.main {
         font-family: Helvetica, sans-serif, Arial;
         margin: 0;
         padding: 0;
@@ -587,7 +651,7 @@
     /******************************************************************************************
     *******************************Section 1 (desktop)*****************************************
     ******************************************************************************************/
-    header {
+    header.main {
         height: 975px;
         width: 100%;
         background: #1dcaff url('../img/dino-reichmuth-98982-min.jpg') no-repeat top center;
@@ -716,8 +780,6 @@
         color: #16a085;
         font-size: 42px;
         line-height: 40px;
-        -webkit-animation: opacity 2s infinite;
-        -o-animation: opacity 2s infinite;
         animation: opacity 2s infinite;
     }
 
@@ -729,11 +791,9 @@
 
     .content-container-list {
         margin-top: 0;
-        padding-left: 110px;
+        padding-left: 100px;
         text-align: left;
         list-style: none;
-        -webkit-animation: change 10s infinite;
-        -o-animation: change 10s infinite;
         animation: change 10s infinite;
     }
 
@@ -863,20 +923,13 @@
     .level{
         width: 100%;
         height: auto;
-        display: -webkit-box;
-        display: -moz-box;
         display: -ms-flexbox;
-        display: -webkit-flex;
         display: flex;
-        -webkit-box-orient: horizontal;
         -moz-orient: horizontal;
-        -webkit-box-direction: normal;
-        -moz-box-direction: normal;
-        -webkit-flex-direction: column;
         -moz-flex-direction: column;
         -webkit-box-sizing: border-box;
+        -ms-flex-direction:column;
         flex-direction:column;
-        -moz-box-sizing:border-box;
         -ms-box-sizing:border-box;
         box-sizing: border-box;
         -webkit-overflow: hidden;
@@ -937,9 +990,6 @@
         animation-delay: 750ms;
         animation-duration: 3000ms;
         animation-fill-mode:both;
-        -webkit-animation-timing-function: ease;
-        -moz-animation-timing-function: ease;
-        -o-animation-timing-function: ease;
         animation-timing-function: ease;
         animation-name: fill-85;
     }
@@ -1126,7 +1176,7 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
-    header {
+    header.main {
         height: 975px;
         width: 100%;
         background: #1dcaff url('../img/dino-reichmuth-98982-min.jpg') no-repeat top center;
@@ -1220,16 +1270,35 @@
     .animatedSquares span p {
         font-size: 1.5em;
     }
+    #skillsContent {
+        height: 22%;
+    }
+    #Skills_Detailed {
+        height: 22%;
+    }
+    #portContent {
+        height: 30%;
+        background-color: #ffffff;
+    }
+    .quotes {
+        height: 18%;
+    }
+    #sideContent {
+        height: 22%;
+    }
+    .icons {
+        height: 20px;
+        width: 41%;
+        position: relative;
+        left: 5%;
+        display: block;
+        bottom: 74%;
+        font-size: 3em;
+    }
+    .innerContainer_tight {
+        width: 72%;
+    }
 }
-
-
-
-
-
-
-
-
-
 
 @media only screen  and (min-width : 1824px) {
     .desktopView {
@@ -1241,7 +1310,7 @@
         display: none;
     }
 
-    body {
+    body.main {
         font-family: Helvetica, sans-serif, Arial;
         margin: 0;
         padding: 0;
@@ -1251,7 +1320,7 @@
     /******************************************************************************************
     *******************************Section 1 (desktop)*****************************************
     ******************************************************************************************/
-    header {
+    header.main {
         height: 975px;
         width: 100%;
         background: #1dcaff url('../img/dino-reichmuth-98982-min.jpg') no-repeat top center;
@@ -1260,6 +1329,7 @@
         margin: 0;
         padding: 0;
         position: relative;
+
     }
 
     nav {
@@ -1380,8 +1450,6 @@
         color: #16a085;
         font-size: 42px;
         line-height: 40px;
-        -webkit-animation: opacity 2s infinite;
-        -o-animation: opacity 2s infinite;
         animation: opacity 2s infinite;
     }
 
@@ -1393,11 +1461,9 @@
 
     .content-container-list {
         margin-top: 0;
-        padding-left: 110px;
+        padding-left: 100px;
         text-align: left;
         list-style: none;
-        -webkit-animation: change 10s infinite;
-        -o-animation: change 10s infinite;
         animation: change 10s infinite;
     }
 
@@ -1539,20 +1605,13 @@
     .level {
         width: 100%;
         height: auto;
-        display: -webkit-box;
-        display: -moz-box;
         display: -ms-flexbox;
-        display: -webkit-flex;
         display: flex;
-        -webkit-box-orient: horizontal;
         -moz-orient: horizontal;
-        -webkit-box-direction: normal;
-        -moz-box-direction: normal;
-        -webkit-flex-direction: column;
         -moz-flex-direction: column;
         -webkit-box-sizing: border-box;
+        -ms-flex-direction: column;
         flex-direction: column;
-        -moz-box-sizing: border-box;
         -ms-box-sizing: border-box;
         box-sizing: border-box;
         -webkit-overflow: hidden;
@@ -1622,9 +1681,6 @@
         animation-delay: 750ms;
         animation-duration: 3000ms;
         animation-fill-mode: both;
-        -webkit-animation-timing-function: ease;
-        -moz-animation-timing-function: ease;
-        -o-animation-timing-function: ease;
         animation-timing-function: ease;
         animation-name: fill-85;
     }
@@ -1812,6 +1868,7 @@
         transform: scale(1.5);
         border-radius: 50%;
        -webkit-transform: scale(1.5);
+        background-color: rgba(0, 128, 129, 0.8);;
     }
 
     .animatedSquares span p {
@@ -1877,5 +1934,16 @@
     }
     .skillPoints{
         font-size: 1.5em;
+    }
+    .sender{
+        width: 150px;
+        height: 50px;
+        background-color:rgba(0, 128, 129, 0.8) ;
+        border-color: rgba(0, 128, 129, 0.8);
+        font-family: 'Ubuntu Condensed', cursive, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size:1.1em;
+        left: 85%;
+        position: relative;
+        margin: 20px;
     }
 }

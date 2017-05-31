@@ -3,6 +3,7 @@ var path = require('path');
 
 var gulp = require('gulp'), uglify = require('gulp-uglify');
 var cleanCSS = require('gulp-clean-css');
+var prefix = require('gulp-autoprefixer');
 gulp.task('minify-css', function() {
     return gulp.src('src/css/*.css')
         .pipe(cleanCSS({}))
@@ -11,7 +12,21 @@ gulp.task('minify-css', function() {
 gulp.task('default', function(){
    gulp.src('src/js/*.js').pipe(uglify()).pipe(gulp.dest('src/minjs'));
 });
-
+gulp.task('prefixer', function() {
+    return gulp.src('css/*.css')
+        .pipe(prefix({
+            browsers: ['last 2 versions'],
+            cascade: false }))
+        .pipe(gulp.dest('src/css'));
+});
+gulp.task('minify-css', function() {
+    return gulp.src('css/*.css')
+        .pipe(cleanCSS({}))
+        .pipe(gulp.dest('src/mincss'));
+});
+gulp.task('uglify', function(){
+    gulp.src('js/*.js').pipe(uglify()).pipe(gulp.dest('src/minjs'));
+});
 // Load all gulp plugins automatically
 // and attach them to the `plugins` object
 // var plugins = require('gulp-load-plugins')();
