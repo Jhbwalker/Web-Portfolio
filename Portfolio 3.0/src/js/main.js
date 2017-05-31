@@ -10,29 +10,6 @@ $(document).ready(function () {
     })
 });
 
-// $('.arrow').addClass('origin').clone().insertAfter('.arrow').addClass('cloned').css('position',
-//     'fixed').css('top', '0').css('z-index', '20').removeClass('origin').hide();
-//
-// scrollIntervalID = setInterval(stickyNav, 10);
-//
-// function stickyNav() {
-//     // debugger;
-//     var originalElePos = $('.origin').offset();
-//     var originElementTop = originalElePos.top;
-//
-//     if($(window).scrollTop() >= originElementTop){
-//         originElement = $('.origin');
-//         coordsOriginElement = originElement.offset();
-//         leftOfElement = coordsOriginElement.left;
-//         widthOfElement = originElement.css('width');
-//         $('.cloned').css('left', leftOfElement + 'px').css('top', '0').css('width', widthOfElement).show();
-//         $('.origin').css('visibility', 'hidden');
-//
-//     }else{
-//         $('.clone').hide();
-//         $('.origin').css('visibility', 'visible');
-//     }
-// }
 window.sr = ScrollReveal();
 sr.reveal('.read', {
     duration: 2000,

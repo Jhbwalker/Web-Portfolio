@@ -19,11 +19,7 @@ gulp.task('prefixer', function() {
             cascade: false }))
         .pipe(gulp.dest('src/css'));
 });
-gulp.task('minify-css', function() {
-    return gulp.src('css/*.css')
-        .pipe(cleanCSS({}))
-        .pipe(gulp.dest('src/mincss'));
-});
+
 gulp.task('uglify', function(){
     gulp.src('js/*.js').pipe(uglify()).pipe(gulp.dest('src/minjs'));
 });
